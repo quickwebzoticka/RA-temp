@@ -1,0 +1,27 @@
+.footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 40px;
+	&-left{
+		display: flex;
+		font-size: 14px;
+		font-family: 'Avenir Next Cyr Regular';
+		&__item{
+			margin-right: 100px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	&-right{
+		display: flex;
+		font-size: 18px;
+		font-family: 'Avenir Next Cyr Medium';
+		&__item{
+			margin-right: 100px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+}

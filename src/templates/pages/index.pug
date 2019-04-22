@@ -1,0 +1,186 @@
+extends ../template
+
+block variables
+	- var title = 'Главная'
+
+block content
+	.main
+		.main-banner
+			.main-banner-wrap
+				.main-banner-left
+					.main-banner-left__text Делигируйте работу профессионалам
+					h1.main-banner-left__title Разработка и поддержка сайтов
+					.main-banner-left-items
+						.main-banner-left-items__item Соблюдение сроков
+						.main-banner-left-items__item Системный подход
+						.main-banner-left-items__item Уникальные решения
+					a.main-banner-left__btn(href="#") Узнать подробнее
+				.main-banner-right#lottie
+			.main-banner-bot
+				.main-banner-bot-mouse
+					<svg width="21" height="33" viewBox="0 0 21 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="0.5" y="0.5" width="20" height="32" rx="10" stroke="black" stroke-opacity="0.5"/>
+						<path d="M10.5 6V13.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round"/>
+					</svg>
+				.main-banner-bot-item
+					img(src="assets/images/prize1.png", alt="")
+					span 29 место разработчик интернет-магазинов
+				.main-banner-bot-item
+					img(src="assets/images/prize2.png", alt="")
+					span 32 место разработчик в Санкт-Петербурге
+		.main-about
+			.main-about__subtitle О нашей компании
+			h2.main-about__title Ra-studio
+			.main-about-items
+				.main-about-items-item
+					.main-about-items-item__title 7
+					.main-about-items-item__text Лет мы занимаемся разработкой и поддержкой
+				.main-about-items-item
+					.main-about-items-item__title 70+
+					.main-about-items-item__text Довольных клиентов, работающих с нами
+				.main-about-items-item
+					.main-about-items-item__title 28
+					.main-about-items-item__text Топ разработчиков 1С-Битрикс в Санкт-Петербурге
+				.main-about-items-item
+					.main-about-items-item__title 5
+					.main-about-items-item__text Средняя оценка нас клиентами по данным Рейтинга Рунета
+				.main-about-items-item
+					.main-about-items-item__title 30
+					.main-about-items-item__text Топ разработчиков<br> интернет-магазинов по версии CMS Magazine
+				.main-about-items-item
+					.main-about-items-item__title 15+
+					.main-about-items-item__text Сертифицированных специалистов в команде
+			.main-about__subtitle Сотрудничаем и проводим семинары с 1С-Битрикс
+			.main-about-partners
+				.main-about-partners-item
+					img(src="assets/images/partner1.png", alt="")
+				.main-about-partners-item
+					img(src="assets/images/partner2.png", alt="")
+					img(src="assets/images/partner3.png", alt="")
+				.main-about-partners-item
+					img(src="assets/images/partner4.png", alt="")
+		.main-ways
+			.main-ways__subtitle Что мы делаем
+			h2.main-ways__title Направления разработки
+			.main-ways-item
+				.main-ways-item-top
+					.main-ways-item-top-left
+						<svg width="44" height="36" viewBox="0 0 44 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M3.5 28.5H2.5V29.5H3.5V28.5ZM41 28.5V29.5H42V28.5H41ZM41 1.5H42C42 0.947715 41.5523 0.5 41 0.5V1.5ZM3.5 1.5V0.5C2.94772 0.5 2.5 0.947715 2.5 1.5L3.5 1.5ZM3.5 29.5H41V27.5H3.5V29.5ZM42 28.5V1.5H40V28.5H42ZM41 0.5H3.5V2.5H41V0.5ZM2.5 1.5V28.5H4.5V1.5H2.5ZM0 35.5H44V33.5H0V35.5Z" fill="white"/>
+						</svg>
+						.main-ways-item-top-left-info
+							.main-ways-item-top-left-info__title Сайты
+							.main-ways-item-top-left-info-items
+								.main-ways-item-top-left-info-items__item Корпоративные сайты
+								.main-ways-item-top-left-info-items__item Интернет-магазины
+								.main-ways-item-top-left-info-items__item Промо-сайты
+					<svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1L13 13L25 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+					</svg>
+				.main-ways-item-main
+					.main-ways-item-main__title С 2011 года мы создали более 100 сайтов
+					.main-ways-item-main-content
+						.main-ways-item-main-content-left
+							<svg width="99" height="1" viewBox="0 0 99 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<line y1="0.5" x2="99" y2="0.5" stroke="black"/>
+							</svg>
+							.main-ways-item-main-content-left__title 20+
+							.main-ways-item-main-content-left__text Крупных компаний сотрудничают с нами в рамках годовых контрактов
+						.main-ways-item-main-content-right
+							p Это были корпоративные сайты, интернет-магазины, проекты для повышения лояльности и продвижения продуктов или услуг. Чаще всего с нами работают крупные компании из сферы услуг, промышленного сектора, недвижимости и финансов.
+							p За последний год мы сделали проекты для «Металлоинвест», YOTA, Capital Group и еще 20 крупных компаний.
+							p Обычно сайты мы собираем «под ключ», от проектирования и подготовки задания до сборки и публикации. Например, в 2016 году мы запустили сервис важного государственного голосования, который посетили более 10 млн человек.
+							p А сайт к юбилею компании «Металлоинвест» получил десяток премий на российских и международных конкурсах.
+							p Для решения подобных задач в нашей команде внедрены понятные системы управления процессами и существует внутренний аудит качества.
+			.main-ways-item
+				.main-ways-item-top
+					.main-ways-item-top-left
+						<svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14 10V39H1V10M14 10L7.5 2L1 10M14 10H1M35 13.5V5H22V39H35V30.5M35 13.5H30M35 13.5V22M35 22H27.5M35 22V30.5M35 30.5H30" stroke="white" stroke-width="2"/>
+						</svg>
+						.main-ways-item-top-left-info
+							.main-ways-item-top-left-info__title Дизайн
+							.main-ways-item-top-left-info-items
+								.main-ways-item-top-left-info-items__item UX / UI design
+								.main-ways-item-top-left-info-items__item Прототипирование
+								.main-ways-item-top-left-info-items__item User research
+					<svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1L13 13L25 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+					</svg>
+				.main-ways-item-main
+					.main-ways-item-main__title С 2011 года мы создали более 100 сайтов
+					.main-ways-item-main-content
+						.main-ways-item-main-content-left
+							<svg width="99" height="1" viewBox="0 0 99 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<line y1="0.5" x2="99" y2="0.5" stroke="black"/>
+							</svg>
+							.main-ways-item-main-content-left__title 20+
+							.main-ways-item-main-content-left__text Крупных компаний сотрудничают с нами в рамках годовых контрактов
+						.main-ways-item-main-content-right
+							p Это были корпоративные сайты, интернет-магазины, проекты для повышения лояльности и продвижения продуктов или услуг. Чаще всего с нами работают крупные компании из сферы услуг, промышленного сектора, недвижимости и финансов.
+							p За последний год мы сделали проекты для «Металлоинвест», YOTA, Capital Group и еще 20 крупных компаний.
+							p Обычно сайты мы собираем «под ключ», от проектирования и подготовки задания до сборки и публикации. Например, в 2016 году мы запустили сервис важного государственного голосования, который посетили более 10 млн человек.
+							p А сайт к юбилею компании «Металлоинвест» получил десяток премий на российских и международных конкурсах.
+							p Для решения подобных задач в нашей команде внедрены понятные системы управления процессами и существует внутренний аудит качества.
+			.main-ways-item
+				.main-ways-item-top
+					.main-ways-item-top-left
+						<svg width="41" height="27" viewBox="0 0 41 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.148 19.124L2.268 26H0L11.052 0.511963H13.104L23.94 26H21.672L18.792 19.124H5.148ZM12.024 2.67196L5.904 17.252H18.036L12.024 2.67196Z" fill="white"/>
+							<path d="M32.2715 26.468C30.7835 26.468 29.4515 26.048 28.2755 25.208C27.0995 24.368 26.5115 23.12 26.5115 21.464C26.5115 20.312 26.7875 19.352 27.3395 18.584C27.9155 17.792 28.7195 17.216 29.7515 16.856C30.8075 16.472 31.8755 16.208 32.9555 16.064C34.0355 15.92 35.2835 15.848 36.6995 15.848H38.3915V15.092C38.3915 11.972 36.8075 10.412 33.6395 10.412C31.6715 10.412 30.0035 11.072 28.6355 12.392L27.5555 11.096C29.1395 9.55996 31.2275 8.79196 33.8195 8.79196C35.7635 8.79196 37.3235 9.30796 38.4995 10.34C39.6755 11.372 40.2635 12.884 40.2635 14.876V22.22C40.2635 23.732 40.3595 24.992 40.5515 26H38.7875C38.5955 24.848 38.4995 23.816 38.4995 22.904H38.4275C37.1075 25.28 35.0555 26.468 32.2715 26.468ZM32.7395 24.848C34.5635 24.848 35.9555 24.26 36.9155 23.084C37.8995 21.884 38.3915 20.444 38.3915 18.764V17.396H37.1315C31.3955 17.396 28.5275 18.716 28.5275 21.356C28.5275 22.556 28.9355 23.444 29.7515 24.02C30.5915 24.572 31.5875 24.848 32.7395 24.848Z" fill="white"/>
+						</svg>
+						.main-ways-item-top-left-info
+							.main-ways-item-top-left-info__title Брендинг
+							.main-ways-item-top-left-info-items
+								.main-ways-item-top-left-info-items__item Логотипы
+								.main-ways-item-top-left-info-items__item Фирменный стиль
+								.main-ways-item-top-left-info-items__item Рекламные иллюстрации
+					<svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1L13 13L25 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+					</svg>
+				.main-ways-item-main
+					.main-ways-item-main__title С 2011 года мы создали более 100 сайтов
+					.main-ways-item-main-content
+						.main-ways-item-main-content-left
+							<svg width="99" height="1" viewBox="0 0 99 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<line y1="0.5" x2="99" y2="0.5" stroke="black"/>
+							</svg>
+							.main-ways-item-main-content-left__title 20+
+							.main-ways-item-main-content-left__text Крупных компаний сотрудничают с нами в рамках годовых контрактов
+						.main-ways-item-main-content-right
+							p Это были корпоративные сайты, интернет-магазины, проекты для повышения лояльности и продвижения продуктов или услуг. Чаще всего с нами работают крупные компании из сферы услуг, промышленного сектора, недвижимости и финансов.
+							p За последний год мы сделали проекты для «Металлоинвест», YOTA, Capital Group и еще 20 крупных компаний.
+							p Обычно сайты мы собираем «под ключ», от проектирования и подготовки задания до сборки и публикации. Например, в 2016 году мы запустили сервис важного государственного голосования, который посетили более 10 млн человек.
+							p А сайт к юбилею компании «Металлоинвест» получил десяток премий на российских и международных конкурсах.
+							p Для решения подобных задач в нашей команде внедрены понятные системы управления процессами и существует внутренний аудит качества.
+			.main-ways-item
+				.main-ways-item-top
+					.main-ways-item-top-left
+						<svg width="44" height="47" viewBox="0 0 44 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.5 7.07983C6.64511 9.7778 1 17.2296 1 25.9999C1 37.0456 9.9543 45.9999 21 45.9999C29.8585 45.9999 37.3718 40.2406 40 32.2622" stroke="white" stroke-width="2"/>
+							<path d="M37.237 16.877C39.0798 20.0688 39.8909 23.5707 39.775 26.9998L20.0001 26.9998L20.0001 7.389C26.8335 7.11339 33.5821 10.5466 37.237 16.877Z" stroke="white" stroke-width="2"/>
+						</svg>
+						.main-ways-item-top-left-info
+							.main-ways-item-top-left-info__title Аналитика
+							.main-ways-item-top-left-info-items
+								.main-ways-item-top-left-info-items__item Работа с конверсией
+								.main-ways-item-top-left-info-items__item SEO-оптимизация
+								.main-ways-item-top-left-info-items__item Управление трафиком
+					<svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 1L13 13L25 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
+					</svg>
+				.main-ways-item-main
+					.main-ways-item-main__title С 2011 года мы создали более 100 сайтов
+					.main-ways-item-main-content
+						.main-ways-item-main-content-left
+							<svg width="99" height="1" viewBox="0 0 99 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<line y1="0.5" x2="99" y2="0.5" stroke="black"/>
+							</svg>
+							.main-ways-item-main-content-left__title 20+
+							.main-ways-item-main-content-left__text Крупных компаний сотрудничают с нами в рамках годовых контрактов
+						.main-ways-item-main-content-right
+							p Это были корпоративные сайты, интернет-магазины, проекты для повышения лояльности и продвижения продуктов или услуг. Чаще всего с нами работают крупные компании из сферы услуг, промышленного сектора, недвижимости и финансов.
+							p За последний год мы сделали проекты для «Металлоинвест», YOTA, Capital Group и еще 20 крупных компаний.
+							p Обычно сайты мы собираем «под ключ», от проектирования и подготовки задания до сборки и публикации. Например, в 2016 году мы запустили сервис важного государственного голосования, который посетили более 10 млн человек.
+							p А сайт к юбилею компании «Металлоинвест» получил десяток премий на российских и международных конкурсах.
+							p Для решения подобных задач в нашей команде внедрены понятные системы управления процессами и существует внутренний аудит качества.
