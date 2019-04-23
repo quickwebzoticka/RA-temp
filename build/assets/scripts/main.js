@@ -50,6 +50,13 @@ $(document).ready(function () {
 
 });
 
+$(document).on('click', '.main-banner-bot-mouse', function(){
+	var $div = $(this).data('div');
+	$('html, body').animate({
+		scrollTop: $('#'+$div).offset().top
+	}, 1000);
+});
+
 $(document).on('click', '.main-ways-item-top', function(){
 	$(this).toggleClass('out');
 	$(this).next().slideToggle();

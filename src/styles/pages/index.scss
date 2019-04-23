@@ -3,6 +3,14 @@
 		transform: translateY(-50%);
 	}
 }
+@keyframes tadaa{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
 .main{
 	&-banner{
 		max-width: 1600px;
@@ -49,12 +57,15 @@
 				font-family: 'Avenir Next Cyr Medium';
 				font-size: 14px;
 				color: #6E1866;
+				transition: 0.3s;
 				@media screen and (min-width:1200px){
 					&:hover{
 						box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+						transition: 0.3s;
 					}
 					&:active{
 						box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+						transition: 0.3s;
 					}
 				}
 			}
@@ -62,9 +73,12 @@
 		&-right{
 			height: 100%;
 			flex: 1;
+			
 			svg{
 				height: 100%;
 				width: auto;
+				animation: tadaa 1s normal forwards ease-in-out;
+				animation-iteration-count: 1;
 			}
 		}
 		&-wrap{
@@ -123,7 +137,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
-			margin-bottom: 70px;
+			margin-bottom: 80px;
 			&-item{
 				width: 33.3%;
 				padding: 50px 60px;
@@ -192,17 +206,33 @@
 			margin-bottom: 20px;
 			&-top{
 				width: 100%;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
 				background: linear-gradient(180deg, #6E1866 0%, #5D186E 100%);
 				border-radius: 5px;
 				padding: 50px 120px;
 				cursor: pointer;
+				position: relative;
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #6E1866 0%, #5D186E 100%);
+					opacity: 0;
+					border-radius: 5px;
+					transition: 0.3s;
+				}
 				@media screen and (min-width:1200px){
-					&:hover{
-						background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #6E1866 0%, #5D186E 100%);
+					&:hover:before{
+						opacity: 1
 					}
+				}
+				&-wrap{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					position: relative;
 				}
 				& > svg{
 					transition: 0.3s;
@@ -278,7 +308,7 @@
 	}
 	&-clients{
 		max-width: 930px;
-		margin: 90px auto 0;
+		margin: 100px auto 0;
 		&__subtitle{
 			font-size: 24px;
 			font-family: 'Avenir Next Cyr Regular';
@@ -311,7 +341,7 @@
 	}
 	&-vacancy{
 		max-width: 1085px;
-		margin: 90px auto 0;
+		margin: 60px auto 0;
 		padding: 0 20px;
 		&__subtitle{
 			font-size: 24px;
@@ -385,12 +415,10 @@
 				}
 				svg,
 				img{
-					margin: auto auto 0;
+					margin: auto auto -2px;
 					transition: 0.3s;
 					transform: translateY(10px);
-				}
-				img{
-					margin-left: -20px;
+					width: 100%;
 				}
 				&:nth-child(1){
 					background: linear-gradient(0deg, #9B23EA 0%, #5F72BD 100%);
@@ -415,7 +443,7 @@
 	}
 	&-adv{
 		max-width: 1230px;
-		margin: 90px auto 0;
+		margin: 100px auto 0;
 		padding: 0 20px;
 		&__subtitle{
 			font-size: 24px;
@@ -501,7 +529,7 @@
 	}
 	&-project{
 		max-width: 1085px;
-		margin: 90px auto 100px;
+		margin: 90px auto 80px;
 		padding: 0 20px;
 		&__title{
 			margin: 0;
@@ -562,12 +590,15 @@
 						font-size: 14px;
 						font-family: 'Avenir Next Cyr Medium';
 						cursor: pointer;
+						transition: 0.3s;
 						@media screen and (min-width:1200px){
 							&:hover{
 								box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+								transition: 0.3s;
 							}
 							&:active{
 								box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+								transition: 0.3s;
 							}
 						}
 					}
@@ -577,6 +608,254 @@
 						font-size: 14px;
 						color: rgba(0, 0, 0, 0.7);
 						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include w1024{
+	.main{
+		&-banner{
+			margin-top: 46px;
+			&-wrap{
+				height: auto;
+			}
+			&-left{
+				max-width: 330px;
+				&__text{
+					font-size: 14px;
+					margin-bottom: 15px;
+				}
+				&__title{
+					font-size: 36px;
+					margin-bottom: 15px;
+				}
+				&-items{
+					flex-direction: column;
+					margin-bottom: 25px;
+					&__item{
+						font-size: 14px;
+						margin-bottom: 15px;
+					}
+				}
+			}
+			&-bot{
+				&-mouse{
+					display: none;
+				}
+				&-item{
+					margin-right: 30px;
+					span{
+						max-width: 122px;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		&-about{
+			padding: 0 20px;
+			margin-top: 70px;
+			margin-bottom: 80px;
+			&__subtitle{
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			&__title{
+				font-size: 24px;
+				margin-bottom: 50px;
+			}
+			&-items{
+				margin-bottom: 57px;
+				&-item{
+					padding: 25px 50px 25px 20px;
+					&__title{
+						font-size: 24px;
+					}
+					&__text{
+						font-size: 12px;
+					}
+				}
+			}
+			&-partners{
+				margin-top: 30px;
+				justify-content: space-between;
+				width: 100%;
+				&-item{
+					margin: 0;
+				}
+			}
+		}
+		&-ways{
+			&__subtitle{
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			&__title{
+				font-size: 24px;
+				margin-bottom: 50px;
+			}
+			&-item{
+				&-top{
+					padding: 28px 20px;
+					&-left{
+						svg{
+							margin-right: 20px;
+						}
+						&-info{
+							&__title{
+								font-size: 14px;
+							}
+							&-items{
+								&__item{
+									font-size: 12px;
+								}
+							}
+						}
+					}
+					&-wrap{
+						& > svg{
+							width: 16px;
+							height: 8px;
+						}
+					}
+				}
+				&-main{
+					padding: 25px 20px 20px;
+					&__title{
+						font-size: 18px;
+					}
+					&-content{
+						margin-top: 40px;
+						&-left{
+							max-width: 410px;
+							margin-right: 40px;
+							&__title{
+								font-size: 24px;
+								margin-bottom: 10px;
+							}
+							&__text{
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&-clients{
+			margin-top: 80px;
+			padding: 0 20px;
+			&__subtitle{
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			&__title{
+				font-size: 24px;
+				margin-bottom: 50px;
+			}
+		}
+		&-vacancy{
+			margin-top: 40px;
+			&__subtitle{
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			&__title{
+				font-size: 24px;
+				margin-bottom: 50px;
+			}
+			&-items{
+				&-item{
+					&__text{
+						margin-bottom: 20px;
+						margin-left: 20px;
+						font-size: 12px;
+					}
+					&__title{
+						font-size: 18px;
+						margin-bottom: 25px;
+						margin-left: 20px;
+					}
+					&__btn{
+						width: 135.35px;
+						flex: 0 0 40px;
+						font-size: 14px;
+						margin-left: 20px;
+					}
+					svg,
+					img{
+						transform: translateY(0);
+					}
+				}
+			}
+		}
+		&-adv{
+			margin-top: 80px;
+			&__subtitle{
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			&__title{
+				font-size: 24px;
+				margin-bottom: 50px;
+			}
+			&-left{
+				margin-right: 10px;
+				&-item{
+					padding-bottom: 10px;
+					margin-bottom: 10px;
+					&-top{
+						&__title{
+							font-size: 12px;
+						}
+						&:before,
+						&:after{
+							top: 27px;
+							width: 10px;
+						}
+					}
+					&-content{
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		&-project{
+			margin-top: 80px;
+			margin-bottom: 60px;
+			&__title{
+				font-size: 24px;
+				margin-bottom: 50px;
+			}
+			&-content{
+				padding: 0 20px;
+				&-left{
+					width: 45%;
+					svg{
+						width: 100%;
+					}
+				}
+				&-form{
+					width: 50%;
+					&__title{
+						font-size: 18px;
+						margin-bottom: 20px;
+					}
+					&-row{
+						&__input{
+							height: 40px;
+							width: 47.7%;
+							padding: 10px;
+						}
+					}
+					textarea{
+						padding: 10px;
+					}
+					&-bot{
+						&__btn{
+							height: 40px;
+						}
 					}
 				}
 			}

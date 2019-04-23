@@ -25,3 +25,22 @@
 		}
 	}
 }
+
+@include w1024{
+	.footer{
+		padding: 20px;
+		&-left{
+			font-size: 12px;
+			&__item{
+				margin-right: 30px;
+			}
+		}
+		&-right{
+			font-size: 14px;
+			line-height: 10px;
+			&__item{
+				margin-right: 30px;
+			}
+		}
+	}
+}

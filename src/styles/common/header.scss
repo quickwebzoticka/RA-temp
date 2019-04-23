@@ -9,6 +9,7 @@
 		&__phone{
 			font-family: 'Avenir Next Cyr Demi';
 			margin-right: 40px;
+			font-size: 18px;
 		}
 		&__btn{
 			background: #6E1866;
@@ -21,13 +22,36 @@
 			font-family: 'Avenir Next Cyr Medium';
 			font-size: 14px;
 			color: #FFFFFF;
+			transition: 0.3s;
 			@media screen and (min-width:1200px){
 				&:hover{
 					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					transition: 0.3s;
 				}
 				&:active{
 					box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+					transition: 0.3s;
 				}
+			}
+		}
+	}
+}
+
+@include w1024{
+	.header{
+		padding: 20px;
+		&-logo{
+			svg{
+				height: 50px;
+				width: auto;
+			}
+		}
+		&-info{
+			&__phone{
+				font-size: 14px;
+			}
+			&__btn{
+				height: 40px;
 			}
 		}
 	}
