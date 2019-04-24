@@ -1,0 +1,9 @@
+form.popup-form#SendForm(action="#" style="display: none")
+	.popup-form__title Пишите, мы ответим
+	.popup-form-row
+		input.popup-form-row__input(type="text" placeholder="Имя" name="name" data-required)
+		input.popup-form-row__input(type="tel" placeholder="Телефон" name="tel" data-required)
+	textarea(name="", cols="30", rows="5" placeholder="Сообщение")
+	.popup-form-bot
+		span Нажимая на кнопку, Вы даете согласие на обработку персональных данных
+		button.popup-form-bot__btn(type='submit') Связаться

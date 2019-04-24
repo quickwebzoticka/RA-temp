@@ -14,7 +14,7 @@ block content
 						.main-banner-left-items__item Соблюдение сроков
 						.main-banner-left-items__item Системный подход
 						.main-banner-left-items__item Уникальные решения
-					a.main-banner-left__btn(href="#") Узнать подробнее
+					a.main-banner-left__btn(data-fancybox="" data-options='{"src": "#SendForm", "touch": false}' href="javascript:;") Узнать подробнее
 				.main-banner-right#lottie
 			.main-banner-bot
 				.main-banner-bot-mouse(data-div="second-screen")
@@ -400,9 +400,9 @@ block content
 					.main-project-content-form__title Заполните короткий бриф
 					.main-project-content-form-row
 						input.main-project-content-form-row__input(type="text" placeholder="Имя" name="name" data-required)
-						input.main-project-content-form-row__input(type="text" placeholder="Email" name="email")
+						input.main-project-content-form-row__input(type="email" placeholder="Email" name="email")
 					.main-project-content-form-row
-						input.main-project-content-form-row__input(type="text" placeholder="Телефон" name="tel" data-required)
+						input.main-project-content-form-row__input(type="tel" placeholder="Телефон" name="tel" data-required)
 						input.main-project-content-form-row__input(type="text" placeholder="Компания" name="company")
 					textarea(name="", cols="30", rows="7" placeholder="Опишите свой проект")
 					.main-project-content-form-bot

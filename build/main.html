@@ -48,7 +48,7 @@
 <path d="M185.173 62.0985C184.531 62.0985 184.008 61.8884 183.605 61.4682C183.203 61.045 183.001 60.4803 183.001 59.774V59.6252C183.001 59.1553 183.09 58.7365 183.268 58.3688C183.449 57.9981 183.7 57.7092 184.021 57.502C184.345 57.2919 184.696 57.1868 185.072 57.1868C185.688 57.1868 186.166 57.3896 186.508 57.7953C186.849 58.201 187.02 58.7817 187.02 59.5376V59.8747H183.811C183.823 60.3416 183.959 60.7196 184.218 61.0085C184.481 61.2945 184.814 61.4375 185.216 61.4375C185.502 61.4375 185.745 61.3791 185.943 61.2624C186.142 61.1457 186.315 60.991 186.464 60.7984L186.959 61.1836C186.562 61.7936 185.967 62.0985 185.173 62.0985ZM185.072 57.8522C184.745 57.8522 184.471 57.9719 184.249 58.2112C184.027 58.4476 183.89 58.7803 183.838 59.2093H186.21V59.148C186.187 58.7365 186.076 58.4184 185.877 58.1937C185.679 57.966 185.411 57.8522 185.072 57.8522Z" fill="#252525"/>
 <path d="M191.653 57.2744H192.463V62.011H191.653V58.557L189.469 62.011H188.659V57.2744H189.469V60.7327L191.653 57.2744ZM191.872 55.5496C191.872 55.9027 191.751 56.1872 191.509 56.4032C191.269 56.6162 190.954 56.7228 190.563 56.7228C190.172 56.7228 189.855 56.6148 189.613 56.3988C189.371 56.1829 189.25 55.8998 189.25 55.5496H189.911C189.911 55.7539 189.966 55.9144 190.077 56.0311C190.188 56.1449 190.35 56.2018 190.563 56.2018C190.767 56.2018 190.927 56.1449 191.04 56.0311C191.157 55.9173 191.215 55.7568 191.215 55.5496H191.872Z" fill="#252525"/>
 </svg></a>
-        <div class="header-info"><a class="header-info__phone" href="tel:88126112333">+7 (812) 611-2-333</a><a class="header-info__btn" href="#">Связаться</a></div>
+        <div class="header-info"><a class="header-info__phone" href="tel:88126112333">+7 (812) 611-2-333</a><a class="header-info__btn" data-fancybox="" data-options="{&quot;src&quot;: &quot;#SendForm&quot;, &quot;touch&quot;: false}" href="javascript:;">Связаться</a></div>
       </header>
       <div class="content">
         <div class="sait-map">
@@ -64,5 +64,16 @@
         <div class="footer-right"><a class="footer-right__item" href="mailto:careers@ra-studio.ru">careers@ra-studio.ru</a><a class="footer-right__item" href="tel:88126112333">+7 (812) 611-2-333</a></div>
       </footer>
     </div>
+    <form class="popup-form" id="SendForm" action="#" style="display: none">
+      <div class="popup-form__title">Пишите, мы ответим</div>
+      <div class="popup-form-row">
+        <input class="popup-form-row__input" type="text" placeholder="Имя" name="name" data-required>
+        <input class="popup-form-row__input" type="tel" placeholder="Телефон" name="tel" data-required>
+      </div>
+      <textarea name="" cols="30" rows="5" placeholder="Сообщение"></textarea>
+      <div class="popup-form-bot"><span>Нажимая на кнопку, Вы даете согласие на обработку персональных данных</span>
+        <button class="popup-form-bot__btn" type="submit">Связаться</button>
+      </div>
+    </form>
   </body>
 </html>
