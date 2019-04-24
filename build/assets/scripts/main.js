@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+	AOS.init({
+		once: true
+ })
+
 	if( $(document).find('#lottie').length != 0) {
 		var select = function(s) {
 			if( $(document).find(s).length != 0) {
