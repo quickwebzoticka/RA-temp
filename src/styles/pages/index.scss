@@ -105,6 +105,30 @@
 				display: flex;
 				align-items: center;
 				margin-right: 70px;
+				img {
+					-webkit-filter: grayscale(100%);
+					-moz-filter: grayscale(100%);
+					-ms-filter: grayscale(100%);
+					-o-filter: grayscale(100%);
+					filter: grayscale(100%);
+					filter: gray; /* IE 6-9 */
+				/*Добавим вот такой вот код*/
+					-webkit-transition: all 0.3s;
+					-moz-transition: all 0.3s;
+					-o-transition: all 0.3s;
+					transition: all 0.3s;
+				/*конец кода с transition*/
+				}
+				@media screen and (min-width:1200px){
+					img:hover {
+						-webkit-filter: none;
+						-moz-filter: none;
+						-ms-filter: none;
+						-o-filter: none;
+						filter: none;
+						filter: none; /* IE 6-9 */
+					}
+				}
 				span{
 					margin-left: 15px;
 					max-width: 137px;
