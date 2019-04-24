@@ -56,3 +56,17 @@
 		}
 	}
 }
+
+@include w480{
+	.header{
+		padding: 10px;
+		&-info{
+			&__phone{
+				margin-right: 0;
+			}
+			&__btn{
+				display: none;
+			}
+		}
+	}
+}
