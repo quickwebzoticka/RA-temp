@@ -1,0 +1,66 @@
+extends ../template
+
+block variables
+	- var title = 'Вакансия'
+
+block content
+	.vacancy
+		h1.vacancy__title PHP backend разработчик
+		.vacancy__desc Участие в разработке и поддержке проекта на 1С-Битрикс, UMI CMS, MODX
+		.vacancy-wrap
+			.vacancy-list
+				.vacancy-list__title Требования:
+				.vacancy-list__item Любить и уважать Илюху
+				.vacancy-list__item Купить квартиру в KVS
+				.vacancy-list__item Продать душу Битриксу
+			.vacancy-list
+				.vacancy-list__title Плюсом будет:
+				.vacancy-list__item Умение работать сразу над десятью проектами
+			.vacancy-list
+				.vacancy-list__title Обязанности:
+				.vacancy-list__item Улучшать KVS
+				.vacancy-list__item Любить KVS
+				.vacancy-list__item Мечтать о KVS
+			.vacancy-list
+				.vacancy-list__title Заработная плата:
+				.vacancy-list__item Обсуждается на собеседовании
+		.vacancy-bonus
+			.vacancy-bonus__title Бонусы
+			.vacancy-bonus-wrap
+				.vacancy-bonus-item 
+					.vacancy-bonus-item__title 🎓 Учимся
+					.vacancy-bonus-item__text Все вместе мы осваиваем английский и обмениваемся опытом.
+				.vacancy-bonus-item
+					.vacancy-bonus-item__title 🍕 Угощаем
+					.vacancy-bonus-item__text Предоставим все необходимое для продуктивной работы. Пиццу — в том числе.
+				.vacancy-bonus-item
+					.vacancy-bonus-item__title 📚 Учим
+					.vacancy-bonus-item__text Талантливых людей приглашаем на стажировку.
+				.vacancy-bonus-item
+					.vacancy-bonus-item__title 🍕 Угощаем
+					.vacancy-bonus-item__text Предоставим все необходимое для продуктивной работы. Пиццу — в том числе.
+				.vacancy-bonus-item
+					.vacancy-bonus-item__title 📚 Учим
+					.vacancy-bonus-item__text Талантливых людей приглашаем на стажировку.
+				.vacancy-bonus-item 
+					.vacancy-bonus-item__title 🎓 Учимся
+					.vacancy-bonus-item__text Все вместе мы осваиваем английский и обмениваемся опытом.
+		form.vacancy-form(action="#")
+			.vacancy-form__title Контактные данные
+			.vacancy-form-row
+				input.vacancy-form-row__input(type="text" placeholder="ФИО" name="name" data-required)
+				input.vacancy-form-row__input(type="text" placeholder="Телефон" name="tel" data-required)
+				input.vacancy-form-row__input(type="text" placeholder="Email" name="email" data-required)
+			.vacancy-form-row
+				input.vacancy-form-row__input(type="text" placeholder="Образование" name="education" data-required)
+				input.vacancy-form-row__input(type="text" placeholder="Опыт работы" name="experience")
+				input.vacancy-form-row__input(type="text" placeholder="Ссылка на портфолио" name="link")
+			textarea(name="", cols="30", rows="5" placeholder="Расскажите о себе")
+			.vacancy-form-file
+				label(for="file") Прикрепить файл
+				input(type="file" id="file" name="file")
+				span 
+			.vacancy-form-bot
+				button.vacancy-form-bot__btn(type='submit') Отправить
+				span Нажимая на кнопку, Вы даете согласие на обработку персональных данных
+		

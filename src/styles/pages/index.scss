@@ -234,7 +234,7 @@
 					align-items: center;
 					position: relative;
 				}
-				& > svg{
+				& > &-wrap > svg{
 					transition: 0.3s;
 				}
 				&.out > &-wrap > svg{
@@ -929,7 +929,7 @@
 				&-item{
 					width: 50%;
 					margin-bottom: 14px;
-					padding-right: 5px;
+					padding-right: 20px;
 					&:nth-child(3n){
 						border-right: 0.5px solid rgba(0, 0, 0, 0.15);
 					}

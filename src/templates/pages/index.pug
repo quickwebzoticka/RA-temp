@@ -399,12 +399,12 @@ block content
 				form.main-project-content-form(action="#")
 					.main-project-content-form__title Заполните короткий бриф
 					.main-project-content-form-row
-						input.main-project-content-form-row__input(type="text" placeholder="Имя" name="name" required)
-						input.main-project-content-form-row__input(type="text" placeholder="Email" name="email" required)
+						input.main-project-content-form-row__input(type="text" placeholder="Имя" name="name" data-required)
+						input.main-project-content-form-row__input(type="text" placeholder="Email" name="email")
 					.main-project-content-form-row
-						input.main-project-content-form-row__input(type="text" placeholder="Телефон" name="tel" required)
-						input.main-project-content-form-row__input(type="text" placeholder="Компания" name="company" required)
-					textarea(name="", cols="30", rows="7" placeholder="Опишите свой проект" required)
+						input.main-project-content-form-row__input(type="text" placeholder="Телефон" name="tel" data-required)
+						input.main-project-content-form-row__input(type="text" placeholder="Компания" name="company")
+					textarea(name="", cols="30", rows="7" placeholder="Опишите свой проект")
 					.main-project-content-form-bot
 						button.main-project-content-form-bot__btn(type='submit') Связаться
 						span Нажимая на кнопку, Вы даете согласие на обработку персональных данных
