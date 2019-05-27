@@ -18,9 +18,10 @@
   },
   "homepage": "https://github.com/jedenkoor/RA-temp#readme",
   "devDependencies": {
+    "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.3",
     "del": "^4.1.0",
-    "gulp": "^4.0.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-cache": "^1.1.1",
     "gulp-imagemin": "^5.0.3",

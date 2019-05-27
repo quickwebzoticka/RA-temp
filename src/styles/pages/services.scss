@@ -1,0 +1,155 @@
+.services {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px;
+
+    &-head {
+        padding: 0 108px; 
+        @include pad(top, cyan);
+        @include pad(bottom, purple);
+        @include w1024 {
+            padding: 0px;
+        }
+    }
+
+
+    &-grid {
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 300px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        -ms-grid-template-columns: 1fr 1fr;
+        -ms-grid-auto-rows: 300px;
+        -ms-grid-column-gap: 20px;
+        -ms-grid-row-gap: 20px;
+        @include w768 {
+            grid-template-columns: 1fr;
+        }
+
+
+        &-item {
+            border-radius: 10px;
+            padding: 30px 0 30px 30px;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            overflow: hidden;
+            position: relative;
+
+            
+            &-content {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                position: relative;
+                z-index: 2;
+
+
+                &__text {
+                    font-family: 'Avenir Next Cyr Medium', sans-serif;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: rgba(0, 0, 0, 0.75);
+                }
+
+
+                &__head {
+                    font-family: 'Avenir Next Cyr Medium', sans-serif;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: rgba(0, 0, 0, 0.9);
+                    @include pad(bottom, yellow);
+                }
+
+
+                &__btn {
+                    margin-top: auto;
+
+                    .main-banner-left__btn {
+                        @include w480 {
+                            position: static;
+                            transform: none;
+                        }
+                    }
+
+
+                }
+
+
+            }
+
+
+            &-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                flex: 1;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                @include w480 {
+                    display: none;
+                }
+
+            }
+
+
+            &:nth-child(1) {
+                background: #FAFAFA;
+            }
+
+
+            &:nth-child(2) {
+                background: #F3F3F3;
+
+
+                .services-grid-item-img {
+                    position: absolute;
+                    left: 57%;
+                    top: unset;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                }
+
+
+            }
+
+
+            &:nth-child(3) {
+                background: #FFF9F9;
+
+                .services-grid-item-img {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                }
+
+
+            }
+
+
+            &:nth-child(4) {
+                background: #F4F6FF;
+
+                .services-grid-item-img {
+                    position: static;
+                    right: 30px;
+                    transform: unset;
+                }
+
+
+            }
+        }
+
+
+    }
+
+
+
+
+}

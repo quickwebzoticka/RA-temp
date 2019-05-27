@@ -1,3 +1,5 @@
+import Additional from './additional.js'
+
 $(document).ready(function () {
 
 	AOS.init({
@@ -114,3 +116,7 @@ function resizewindow() {
 
 	
 };
+
+$(document).ready(() => {
+	let additional = new Additional;
+})

@@ -1,0 +1,46 @@
+extends ../template
+
+block variables
+    - var title = 'Услуги'
+
+block content
+    .services
+        .services-head
+            .main-banner-left__text От визитки до сайта
+            h1.main-banner-left__title Полный спектр услуг
+        .services-grid
+            .grid-item.services-grid-item
+                .grid-item-column.services-grid-item-content
+                    .services-grid-item-content__head Логотип
+                    .services-grid-item-content__text Ваш уникальный знак
+                    .services-grid-item-content__btn
+                        a.main-banner-left__btn Узнать подробнее
+                .grid-item-column.services-grid-item-img
+                    img(src="assets/images/services-1.png", alt="services-1")
+            .grid-item.services-grid-item
+                .grid-item-column.services-grid-item-content
+                    .services-grid-item-content__head Упаковка
+                    .services-grid-item-content__text Ваш уникальный знак
+                    .services-grid-item-content__btn
+                        a.main-banner-left__btn Узнать подробнее
+                .grid-item-column.services-grid-item-img
+                    img(src="assets/images/services-2.png", alt="services-2")
+            .grid-item.services-grid-item
+                .grid-item-column.services-grid-item-content
+                    .services-grid-item-content__head Дизайн
+                    .services-grid-item-content__text Уникальные решения
+                    .services-grid-item-content__btn
+                        a.main-banner-left__btn Узнать подробнее
+                .grid-item-column.services-grid-item-img
+                    img(src="assets/images/services-3.png", alt="services-3")
+            .grid-item.services-grid-item
+                .grid-item-column.services-grid-item-content
+                    .services-grid-item-content__head Разработка
+                    .services-grid-item-content__text Качественные разработки
+                    .services-grid-item-content__btn
+                        a.main-banner-left__btn Узнать подробнее
+                .grid-item-column.services-grid-item-img
+                    img(src="assets/images/services-4.png", alt="services-4")
+
+        include ../common/form.pug
+
